@@ -22,5 +22,5 @@ def initialize(owner: Signer, flipper: Empty[Flipper]):
 
 @instruction
 def flip(owner: Signer, flipper: Flipper):
-    assert owner.key() == flipper.owner, 'This is not your calculator!'
+    assert owner.key() == flipper.owner, 'This is not your lightswitch!'
     flipper.state = not flipper.state
